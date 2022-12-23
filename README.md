@@ -1,1 +1,1 @@
-# exercises3BLOG
+free画像：著作者：<a href="https://jp.freepik.com/free-photo/education-day-arrangement-on-a-table-with-copy-space_10752836.htm">Freepik</a>
