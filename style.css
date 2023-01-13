@@ -62,12 +62,12 @@ img {
   font-size: 0.875rem;
   text-align: center;
 }
-.pickup .readmore .readmore a {
+.pickup .readmore a {
   padding-bottom: 1px;
   position: relative;
   color: #333;
 }
-.pickup .readmore .readmore a::after {
+.pickup .readmore a::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -76,4 +76,22 @@ img {
   bottom: 0;
   background: #333;
   transition: all 200ms ease;
+}
+.pickup .readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 65%;
+}
+
+aside {
+  width: 33%;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

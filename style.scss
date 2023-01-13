@@ -63,13 +63,13 @@ img {
     font-size: 0.875rem;
     text-align: center;
      
-    .readmore a {
+    a {
       padding-bottom: 1px;
       position: relative;
       color: #333;
-     
-    
-      &::after {
+    }
+
+    a::after {
       content: '';
       position: absolute;
       height: 1px;
@@ -78,7 +78,24 @@ img {
       bottom: 0;
       background: #333;
       transition: all 200ms ease;
-      }
     }
-  }
+
+    a:hover::after {
+      opacity: 0;
+      transform: translateY(3px);
+    }
+  } 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 65%;
+}
+aside {
+  width: 33%;
+  padding: 20px;
 }
