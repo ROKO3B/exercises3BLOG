@@ -46,6 +46,39 @@ img {
 }
 
 /*------------pickup---------------*/
-#pickup {
-  
+.pickup {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+   
+   .article-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 10px 0 15px 0;
+   }
+
+   .readmore {
+    font-size: 0.875rem;
+    text-align: center;
+     
+    .readmore a {
+      padding-bottom: 1px;
+      position: relative;
+      color: #333;
+     
+    
+      &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #333;
+      transition: all 200ms ease;
+      }
+    }
+  }
 }
