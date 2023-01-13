@@ -60,7 +60,7 @@ img {
    }
 
    .readmore {
-    font-size: 0.875rem;
+    font-size: 14px;
     text-align: center;
      
     a {
@@ -94,8 +94,119 @@ img {
 
 main {
   width: 65%;
+
+  article {
+    margin-bottom: 80px;
+  }
+
+  .article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px 15px;
+  }
+
+  .category {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    justify-content: flex-start;
+
+      li {
+        margin-right: 20px;
+      }
+  }
+
+  p {
+    padding: 10px 40px 30px;
+  }
+
+  .readmore {
+    font-size: 14px;
+    text-align: center;
+
+    a {
+      padding-bottom: 1px;
+      position: relative;
+      color: #333;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #333;
+      transition: all 200ms ease;
+    }
+
+    a:hover::after {
+      opacity: 0;
+      transform: translateY(3px);
+    }
+  }
 }
-aside {
+
+.sidebar {
   width: 33%;
   padding: 20px;
+}
+
+.side-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.author {
+  margin-bottom: 60px;
+  text-align: center;
+  
+    img {
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: normal;
+    }
+}
+
+.ranking {
+  margin-bottom: 60px;
+
+    .article-title {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    img {
+      padding: 10px 0;
+    }
+}
+
+.archive {
+  ul {
+    border-bottom: 1px solid #777;
+  }
+  li {
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    border-top: 1px solid #777;
+  }
+}
+
+.footer {
+
+  .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
 }
