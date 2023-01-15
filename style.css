@@ -32,6 +32,7 @@ img {
   line-height: 1px;
 }
 .header .nav-menu {
+  font-size: 14px;
   height: 40px;
   line-height: 40px;
   background-color: #333;
@@ -44,7 +45,7 @@ img {
   align-items: center;
 }
 .header .nav-menu .wrapper li {
-  padding: 10px 60px 10px 0;
+  padding: 0 60px 0 0;
 }
 
 /*------------pickup---------------*/
@@ -251,11 +252,9 @@ main .readmore a:hover::after {
   .header .site-title {
     padding: 20px 16px;
   }
-  .nav-menu {
-    height: 40px;
-    line-height: 40px;
+  .nav-menu .wrapper {
     overflow-x: scroll;
-    white-space: nowrap;
+    overflow-y: hidden;
   }
   .pickup {
     flex-direction: column;

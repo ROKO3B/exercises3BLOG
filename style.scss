@@ -29,6 +29,7 @@ img {
     line-height: 1px;
   }
   .nav-menu {
+    font-size: 14px;
     height: 40px;
     line-height: 40px;
     background-color: #333;
@@ -41,7 +42,7 @@ img {
       align-items: center;
 
       li {
-        padding: 10px 60px 10px 0;
+        padding: 0 60px 0 0;
       }
     }
   }
@@ -286,10 +287,11 @@ main {
   }
 
   .nav-menu {
-    height: 40px;
-    line-height: 40px;
-    overflow-x:scroll;
-    white-space: nowrap;
+      
+      .wrapper {
+        overflow-x:scroll; 
+        overflow-y: hidden; 
+    }
    }
 
   .pickup {
