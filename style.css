@@ -37,12 +37,13 @@ img {
   background-color: #333;
   color: #fff;
 }
-.header .nav-menu ul {
+.header .nav-menu .wrapper {
   display: flex;
+  height: 40px;
   justify-content: flex-start;
   align-items: center;
 }
-.header .nav-menu ul li {
+.header .nav-menu .wrapper li {
   padding: 10px 60px 10px 0;
 }
 
