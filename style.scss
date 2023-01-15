@@ -30,6 +30,7 @@ img {
   }
   .nav-menu {
     height: 40px;
+    line-height: 40px;
     background-color: #333;
     color: #fff;
 
@@ -274,3 +275,19 @@ main {
 
 
 /*------------sp---------------*/
+@media screen and (max-width: 767px) {
+
+  .header {
+
+     .site-title {
+      padding: 20px 16px;
+     }
+  }
+
+  .nav-menu {
+    height: 40px;
+    line-height: 40px;
+    overflow-x:scroll;
+    white-space: nowrap;
+   }
+}
