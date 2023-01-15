@@ -30,11 +30,13 @@ img {
   }
   .nav-menu {
     font-size: 14px;
-    height: 40px;
-    line-height: 40px;
     background-color: #333;
     color: #fff;
 
+      ul {
+        height: 40px;
+        line-height: 40px;
+      }
     .wrapper {
       display: flex;
       height: 40px;
@@ -42,8 +44,24 @@ img {
       align-items: center;
 
       li {
-        padding: 0 60px 0 0;
+        padding-right: 60px;
       }
+    }
+  }
+
+  img {
+    animation: bound .9s linear 3;
+    animation-delay:1s;
+  }
+  @keyframes bound {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px) scaleY(0.6);
     }
   }
 }
@@ -87,7 +105,17 @@ img {
       opacity: 0;
       transform: translateY(3px);
     }
-  } 
+  }
+
+  img {
+    overflow: hidden;
+  
+    &:hover {
+      transform: scale(1.2,1.2);
+      transition: 1s all;
+    }
+  }
+
 }
 /*------------main---------------*/
 .container {
@@ -287,7 +315,14 @@ main {
   }
 
   .nav-menu {
-      
+    background-color: #333;
+    ul {
+      height: 60px;
+        li {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+    }  
       .wrapper {
         overflow-x:scroll; 
         overflow-y: hidden; 
